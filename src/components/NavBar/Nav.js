@@ -24,11 +24,13 @@ function Nav() {
   return (
     <div className={`nav ${show && "nav_black"}`}>
       <div className="nav_contents">
+      
         <img
           className='nav_logo'
           src={logo} 
           alt="logo"
         />
+       
  
         <img 
           className='nav_avatar'
