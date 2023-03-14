@@ -5,18 +5,31 @@ import {
   Route
 } from "react-router-dom";
 
-
+import Login from './screens/Login'
 import './App.css';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 
 function App() {
+
+  const user =null;
+
+  // const user = {
+  //   name:"hello"
+  // };
+
   return (
     <div className="app">
-      <HomeScreen />
       <Router>
+        {!user ?(
+          <Login/>
+        ):(
         <Routes>
           <Route path="/" element={<HomeScreen/>}/>
         </Routes>
+        )
+
+      }
+        
     </Router>
 
     </div>
