@@ -23,11 +23,14 @@ function Login() {
 
       </div>
 
-      <div className="login_body">
+      <div className="">
         {signIn ?(
-          <SignupScreen />
+          <div className='signup_body'>
+            <SignupScreen />
+          </div>
+          
         ) : (
-          <>
+          <div className='login_body'>
           <h1>Unlimited films, TV programmes and more.</h1>
           <h2>Watch anywhere. Cancel at any time.</h2>
           <h3>Ready o watch? Enter your email to create or restart your membership.</h3>
@@ -37,12 +40,12 @@ function Login() {
               <input type="email" placeholder='Email Address' />
               <button onClick={()=>setSignIn(true)}
                className='login_getStarted'>
-                GET STARTED
+                GET STARTED <span>&#12297;</span> 
               </button>
             </form>
           </div>
 
-        </>
+        </div>
         )} 
       </div>
     </div>
