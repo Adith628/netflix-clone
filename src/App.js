@@ -8,6 +8,7 @@ import {
 import Login from './screens/Login'
 import './App.css';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
+import ProfileScreen from './screens/ProfileScreen';
 import { auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
@@ -29,7 +30,7 @@ function App() {
         }))
       }else{
         //logged out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
 
@@ -44,6 +45,7 @@ function App() {
           <Login/>
         ):(
         <Routes>
+          <Route path='/profile' element={<ProfileScreen/>} ></Route>
           <Route path="/" element={<HomeScreen/>}/>
         </Routes>
         )

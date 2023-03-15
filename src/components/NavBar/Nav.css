@@ -15,9 +15,8 @@
 .nav_avatar{
     position: fixed;
     width: 30px;
-    right: 50px;
+    right: 30px;
     cursor: pointer;
-    border-radius: 50%;
 }
 
 .nav {
