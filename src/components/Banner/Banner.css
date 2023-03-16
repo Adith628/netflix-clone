@@ -4,6 +4,7 @@
     height: 448px;
     position: relative;
     object-fit: contain;
+    margin-bottom: 20px;
 } 
 
 .banner_contents{
@@ -19,7 +20,7 @@
 }
 
 .banner_title{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     padding-bottom:0.3rem;
 }
@@ -31,6 +32,7 @@
     width: auto;
     max-width: 25rem;
     height: 80px;
+    padding-right: 8px;
 }
 
 .banner--fadeBottom{
