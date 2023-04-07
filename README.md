@@ -1,7 +1,7 @@
 # Netflix Clone
 This is a netflix clone created using React.js and redux with Firebase authentication.And also hosted using firebase.
 
-Check it out : https://netflix-clone-1f25d.web.app
+Check it out : https://netflix-clone-kappa-topaz.vercel.app/
 
 ## Getting Started with Create React App and Redux
 
